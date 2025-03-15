@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+body > header {
+    grid-area: header;
+    padding: 20px;
+    font-size: 1.3rem;
+    background-color: antiquewhite;
+    border-bottom: 1px solid gray;
+}
+body > main {
+    grid-area: main;
+    text-align: center;
+}
+body > footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+    "footer-left footer-right";
+    grid-template-columns: 2fr 3fr;
+    background-color: azure;
+    padding: 20px;
+}
+
+
+/* Main Section */
+#introduction {
+    
+}
+#mypic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#about {
+    display: grid;
+    grid-template-areas: 
+    "about-title about-title"
+    "about-selfintro about-video"
+    "about-portfolio about-portfolio";
+    grid-template-columns: 2fr 2fr;
+    background-color: yellowgreen;
+}
+#about > #about-title {
+    grid-area: about-title;
+}
+#about > #about-selfintro {
+    grid-area: about-selfintro;
+}
+#about > #about-video {
+    grid-area: about-video;
+}
+#about > #about-portfolio {
+    grid-area: about-portfolio;
+}
+#trial {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Footer Section */
+footer > #footer-left {
+    grid-area: footer-left;
+}
+footer > #footer-right {
+    grid-area: footer-right;
+}

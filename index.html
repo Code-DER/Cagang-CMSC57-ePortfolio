@@ -9,33 +9,111 @@
 <body>
     <header>
         <nav>
-            <h3>Portfolio</h3>
+            <div id="header-title">
+                <h3 class="heading-title">Portfolio</h3>
+            </div>
+            <div id="header-navbar">
+                <ul class="menu">
+                    <li><a href="#introduction">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section id="introduction">
-            <img src="images/mypic.jpg" id="mypic">
-            <h2>Xander Jay C. Cagang</h2>
-            <p>Hi! I am Xander. Call me Der!</p>
+            <div id="intro-container">
+                <img src="media/mypic.jpg" id="mypic">
+                <h2 class="heading-title">Xander Jay C. Cagang</h2>
+                <p>Hi! I am Xander. Call me Der! I am a Computer Science student.</p>
+            </div>
         </section>
         <section id="about">
-            <div id="about-title">
-                <h2>About</h2>
-            </div>
-            <div id="about-selfintro">
-                <p>I am Xander Jay C. Cagang, a 1st year Computer Science Student
-                    at the University of the Philippines Mindanao.
-                </p>
-            </div>
-            <div id="about-video">
-                <img src="images/mypic.jpg" id="trial">
-            </div>
-            <div id="about-portfolio">
-                <p>This portfolio is for cmsc 57.</p>
+            <div id="about-container">
+                <div id="about-title">
+                    <h2 class="heading-title">About</h2>
+                </div>
+                <div id="about-selfintro">
+                    <p>I am Xander Jay C. Cagang, 20 years old, from Davao City. I am a 1st year Computer Science Student
+                        at the University of the Philippines Mindanao.
+                    </p>
+                </div>
+                <div id="about-video">
+                    <img src="media/spinning cat.gif" id="about-video-media">
+                </div>
+                <div id="about-portfolio">
+                    <p>This website serves as an electronic portfolio for the subject CMSC 57 - Discrete Mathematical Structure in
+                        Computer Science II. This website will showcase all of my learnings in this subject. I will be able to show
+                        what I've learned, what my reflections are about it, my analyses, and some applications in real life of the 
+                        topics that we've tackled. Feel free to explore about and learn with me!
+                    </p>
+                </div>
             </div>
         </section>
         <section id="topics">
-
+            <div id="topics-container">
+                <div id="topics-title">
+                    <h2 class="heading-title">Topics</h2>
+                </div>
+                <div id="topics-intro">
+                    <p>These are the five main topics tackled in this subject. I have explore these topics and
+                        have my own thoughts, reflections, learnings, applications, and analysis. Click on any
+                        of the following topics to dig deeper about my learnings.
+                    </p>
+                </div>
+                <div id="topic-cards-container">
+                    <div class="topics-card">
+                        <div class="topics-card-img">
+                            <img src="media/spinning cat.gif">
+                        </div>
+                        <div class="topics-card-text">
+                            <h3 class="topic-title">Counting</h3>
+                            <p class="topic-intro">Short Topic Introduction</p>
+                            <a class="card-button">Explore Topic</a>
+                        </div>
+                    </div>
+                    <div class="topics-card">
+                        <div class="topics-card-img">
+                            <img src="media/spinning cat.gif">
+                        </div>
+                        <div class="topics-card-text">
+                            <h3 class="topic-title">Algebraic Structure and Groups</h3>
+                            <p class="topic-intro">Short Topic Introduction</p>
+                            <a class="card-button">Explore Topic</a>
+                        </div>
+                    </div>
+                    <div class="topics-card">
+                        <div class="topics-card-img">
+                            <img src="media/spinning cat.gif">
+                        </div>
+                        <div class="topics-card-text">
+                            <h3 class="topic-title">Groups, Rings, and Fields</h3>
+                            <p class="topic-intro">Short Topic Introduction</p>
+                            <a class="card-button">Explore Topic</a>
+                        </div>
+                    </div>
+                    <div class="topics-card">
+                        <div class="topics-card-img">
+                            <img src="media/spinning cat.gif">
+                        </div>
+                        <div class="topics-card-text">
+                            <h3 class="topic-title">Discrete Probability</h3>
+                            <p class="topic-intro">Short Topic Introduction</p>
+                            <a class="card-button">Explore Topic</a>
+                        </div>
+                    </div>
+                    <div class="topics-card">
+                        <div class="topics-card-img">
+                            <img src="media/spinning cat.gif">
+                        </div>
+                        <div class="topics-card-text">
+                            <h3 class="topic-title">Graphs</h3>
+                            <p class="topic-intro">Short Topic Introduction</p>
+                            <a class="card-button">Explore Topic</a>
+                        </div>
+                    </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -44,9 +122,9 @@
             <h4>&copy; CMSC 57 ePortfolio</h4>
         </div>
         <div id="footer-right">
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="mail-outline"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
+            <a href="https://www.facebook.com/xaxangderder/" target="_blank"><ion-icon name="logo-facebook"></ion-icon><span>/xaxangderder/</span></a>
+            <a href="mailto:xccagang@up.edu.ph"><ion-icon name="mail-outline"></ion-icon><span>xccagang@up.edu.ph</span></a>
+            <a href="https://github.com/Code-DER" target="_blank"><ion-icon name="logo-github"></ion-icon><span>/Code-DER</span></a>
         </div>
     </footer>
 

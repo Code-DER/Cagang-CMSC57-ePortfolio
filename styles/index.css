@@ -173,6 +173,7 @@ section {
     border-bottom: 3px solid gray;
     outline: 2px solid black;
     padding: 5px;
+    text-decoration: none;
 }
 .card-button:hover {
     background-color: rgb(0, 197, 0);

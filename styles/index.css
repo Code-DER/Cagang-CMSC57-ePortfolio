@@ -6,13 +6,17 @@
     scroll-behavior: smooth;
 }
 body {
-    background-image: url('/media/pixelbackground.png');
-    background-repeat: repeat;
+    /* background-image: url('/media/pixelbackground.png'); */
     display: grid;
     grid-template-areas: 
     "header"
     "main"
     "footer";
+}
+#index-body {
+    background-image: linear-gradient(to right, rgba(130, 255, 130, 0.3) 1px, transparent 1px), linear-gradient(to bottom, rgba(130, 255, 130, 0.3) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-color: #1A2F4D;
 }
 body > header {
     grid-area: header;
@@ -77,8 +81,8 @@ section {
 }
 #mypic {
     border-radius: 10px;
-    width: 150px;
-    height: 190px;
+    width: 200px;
+    height: auto;
     border-left: 3px solid white;
     border-top: 3px solid white;
     border-right: 3px solid gray;
@@ -90,12 +94,12 @@ section {
     display: grid;
     grid-template-areas: 
     "about-title about-title"
-    "about-selfintro about-video"
-    "about-portfolio about-portfolio";
+    "about-selfintro about-pic"
+    "about-portfolio about-pic";
     grid-template-columns: 3fr 2fr;
     background-color: #0d1726e1;
     padding: 50px;
-    gap: 30px;
+    gap: 20px;
 }
 #about-container > #about-title {
     grid-area: about-title;
@@ -104,15 +108,15 @@ section {
     grid-area: about-selfintro;
     text-align: justify;
 }
-#about-container > #about-video {
-    grid-area: about-video;
+#about-container > #about-pic {
+    grid-area: about-pic;
 }
 #about-container > #about-portfolio {
     grid-area: about-portfolio;
     text-align: justify;
 }
-#about-video-media {
-    height: 200px;
+#about-pic-media {
+    height: auto;
     width: 200px;
     border-left: 3px solid white;
     border-top: 3px solid white;

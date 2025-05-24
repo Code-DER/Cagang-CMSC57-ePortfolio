@@ -23,6 +23,7 @@ body {
     height: auto;
     width: 80%;
     padding-bottom: 30px;
+    border-radius: 8px;
 }
 .topic-section > .topic-section-heading {
     grid-area: topic-heading;

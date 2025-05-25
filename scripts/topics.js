@@ -73,41 +73,112 @@ const topics = {
     },
     algebraic_structure_and_groups: {
         title: "Algebraic Structure and Groups",
-        description: "",
-        learnings_img: "",
-        learnings_heading: "",
-        learnings: "",
-        analysis_img: "",
-        analysis_heading: "",
-        analysis: "",
-        reflection_img: "",
-        reflection_heading: "",
-        reflection: "",
-        applications_img: "",
-        applications_heading: "",
-        applications: "",
-        thoughts_img: "",
-        thoughts_heading: "",
-        thoughts: ""
+        description: `Algebraic Structures in mathematics is a set with one or more operations defined on it. These operations on these structures must follow or adhere to specific rules.`,
+        learnings_img: "../media/algebraic_structures/binaryoperation.png",
+        learnings_heading: "What are Algebraic Structures?",
+        learnings: `An algebraic structure is a set equipped with one or more operations defined on it which follows specific rules. Algebraic structures are mathematical systems where we can perform operations like addition and multiplication,
+        and their properties can all be studied.
+        <br><br>
+        Each structure includes a set of elements. These elements can range up to numbers, matrices, functions, or letters.
+        <br><br>
+        An algebraic structure also must have binary operations defined on it. These binary operations can be addition (+), subtraction (-), multiplication (-), or division (/).
+        <br><br>
+        The algebraic structures' operations defined on it must also follow specific 'Axioms' or properties. These properties can be associative, identity, commutative, inverse, or distributive.`,
+        analysis_img: "../media/algebraic_structures/square.png",
+        analysis_heading: "What can we do with it?",
+        analysis: `With this lesson, we learned a lot about what algebraic structures are. What can we do with it? Algebraic structures allow us to organize mathematical systems based on specific rules. Using algebraic structures, we can simplify
+        complex problems. We can predict behavior of systems and even create models of symmetry and structure. Basically, algebraic structures are sort of systems or a language that describes many different and unique
+        concepts in math and computer science.`,
+        applications_img: "../media/algebraic_structures/cryptography.webp",
+        applications_heading: "Where can these be applied to?",
+        applications: `Based from the analysis, algebraic structures have a lot of applications in real-life.
+        <br><br>
+        Algebraic structures can be applied in cryptography. These are utilized in the design and analysis of cryptographic algorithms, encryption, digital signatures, and cryptographic protocols. This ensures secure online banking, messaging, and
+        digital identities.
+        <br><br>
+        These can also be applied in the Coding Theory. These are used to build error-detecting and correcting codes to encode and decode data, ensuring reliable transmission and error detection.
+        <br><br>
+        Another application of algebraic structures is on computer graphics. Algebraic structures such as group-like structures are used for 3D rotations and transformations. These types of algebraic structures help animate, rotate, and scale objects
+        in games, simulations, and animations.`,
+        reflection_img: "../media/algebraic_structures/rotation.png",
+        reflection_heading: "What then?",
+        reflection: `Through the concepts of algebraic structures and its applications, I realized that algebraic structures aren't just abstract, they are one of the solutions to solving real-world problems. I didn't really realize how big of an impact
+        these structures have on technology. I haven't really had that much interactions or head-on encounter with algebraic structures, but I sure will explore more about it especially that it has a lot of applications in computer science.`,
+        thoughts_img: "../media/thinking.png",
+        thoughts_heading: "What I think?",
+        thoughts: `I thought that this lesson was very confusing at first. I didn't understand what algebraic structure actually are when we first tackled this lesson. But now that I've learned it, I came to realize that it actually has a lot of applications
+        that help solve real-life problems. I still think that this lesson is difficult but once fun to learn. The next topic about specific algebraic structures, namely the groups, rings, and fields, expands more about the ideas and how to analyze, solve,
+        and study the behavior of these different structures.`
     },
     groups_rings_and_fields: {
         title: "Groups, Rings, and Fields",
-        description: "",
-        learnings_img: "",
-        learnings_heading: "",
-        learnings: "",
-        analysis_img: "",
-        analysis_heading: "",
-        analysis: "",
-        reflection_img: "",
-        reflection_heading: "",
-        reflection: "",
-        applications_img: "",
-        applications_heading: "",
-        applications: "",
-        thoughts_img: "",
-        thoughts_heading: "",
-        thoughts: ""
+        description: `Algebraic structures are mathematical systems that consists of a set of elements and one or more operations defined on it. These structures follows specific properties or rules depending on what type of structure it is. The most common
+        of these algebraic structures are the Groups, Rings, and Fields.`,
+        learnings_img: "../media/groups_rings_fields/transformations.png",
+        learnings_heading: "What are these Groups, Rings, and Fields?",
+        learnings: `The previous lesson talked about the concepts of algebraic structures. In this lesson, we will talk about specific algebraic structures, namely the groups, rings, and fields. Let's talk about the concepts, terms, rules, and properties I've
+        learned in this topic.
+        <br><br>
+        A 'Group' is a non-empty set of elements together with an operation that combines any two elements to form a third element while satisfying conditions.
+        <li>Closure: For any two elements a and b in the set, the result of the operation a * b must also be in the set.</li>
+        <li>Associativity: The operation must be associative, meaning  (a * b) * c = a * (b * c) for all elements a, b, and c in the set.</li>
+        <li>Identity Element: In the set, there must be an element e that such for every element a in the set, a * e = e * a = a. This means that e is the identity element of the set.</li>
+        <li>Inverse Element: For every element a in the set, there exists an element b in G such that a * b = b * a = e, where e is the identity element. The element b is called the inverse of a.</li>
+        <li>Additional property: If the operation in the set is commutative, where a * b = b * a for all elements a and b in the set, then the group is called an abelian group.</li>
+        <br><br>
+        A 'Ring' (R, +, ⋅) is a set R together with two binary operations + (addition) and ⋅ (multiplication) such that:
+        <br>
+        Additive Group: (R, +) is an abelian group. This means that:
+        <li>Closure under addition: a + b ∈ R</li>
+        <li>Associativity of addition: (a + b) + c = a + (b + c)</li>
+        <li>Additive identity: There exists an element 0 ∈ R such that a + 0 = a</li>
+        <li>Additive inverse: For every a ∈ R, there exists -a ∈ R such that a + (-a) = 0</li>
+        <li>Commutativity of addition: a + b = b + a</li>
+        Multiplication: The multiplication operation (⋅) satisfies:
+        <li>Closure: For all a, b ∈ R, a ⋅ b ∈ R</li>
+        <li>Associativity: (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c) for all a, b, c ∈ R</li>
+        Distributive Property: Multiplication distributes over addition:
+        <li>a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c)</li>
+        <br><br>
+        A 'Field' (F, +, ⋅) is a set F together with two binary operations + (addition) and ⋅ (multiplication) such that:
+        <br>
+        Additive Group: (F, +) forms an abelian group under addition. This means:
+        <li>Closure under addition: a + b ∈ R</li>
+        <li>Associativity of addition: (a + b) + c = a + (b + c)</li>
+        <li>Additive identity: There exists an element 0 ∈ F such that a + 0 = a</li>
+        <li>Additive inverse: For every a ∈ F, there exists -a ∈ F such that a + (-a) = 0</li>
+        <li>Commutativity of addition: a + b = b + a</li>
+        Multiplication Forms an Abelian Group: Set F forms an abelian group under multiplication:
+        <li>Closure under multiplication: a ⋅ b ∈ F</li>
+        <li>Associativity of multiplication: (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c)</li>
+        <li>Multiplicative identity: There exists and element 1 ∈ F, distinct from 0, such that a ⋅ 1 = a</li>
+        <li>Multiplicative inverse: For every a ∈ F, there exists a<sup>-1</sup> ∈ F such that a ⋅ a<sup>-1</sup> = 1</li>
+        <li>Commutativity of multiplication: a ⋅ b = b ⋅ a</li>
+        Distributive Property: Multiplication distributes over addition:
+        <li>a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c)</li>
+        <br><br>
+        I've also learned about transformations of groups through geometry. An example of one kind of transformation is rotation, which can be done clockwise or counter-clockwise. The rotation of a geometrical shape depends on the operation and shape. Another
+        kind of transformation is a flip, which is done around an axis through a vertex perpendicular to the opposite side.`,
+        analysis_img: "../media/groups_rings_fields/cryptography.png",
+        analysis_heading: "What can we get from this?",
+        analysis: `These groups, rings, and fields are important topics or concepts that help us understand how different mathematical operations work together in structured ways. These algebraic structures provide a framework for us to understand how certain
+        elements interact under different operations. They allow us to solve real-life problems across different fields.`,
+        applications_img: "../media/groups_rings_fields/rubikscube.png",
+        applications_heading: "What are its applications?",
+        applications: `As previosly stated in the last topic, these algebraic structures have a lot of applications which mainly are solutions to real-world problems. Groups can be applied in Cryptography like modular arithmetic and elliptic curve cryptography. It
+        is even used in Rubik's Cube as the moves follow group operations. There is also 3D graphics which can be done through group rotations and flips, and even in Molecular Geometry through the symmetry groups of molecules. Rings can be used in Coding Theory
+        by detecting and correcting error in messages, and in Modular arithmetic as key in cryptographic systems. Fields can also be used in mathematical modeling which uses rational and real numbers to solve equations, error correction, and with Finite Fields, which
+        are used in encryptions, QR codes, and digital communication.`,
+        reflection_img: "../media/groups_rings_fields/shapes.png",
+        reflection_heading: "What did I reflect?",
+        reflection: `From the learnings and and analysis I had, the algebraic structures groups, rings, and fields showed me that they aren't just for academics, but they solve our real-world problems. These algebraic structures are the key components protect our data,
+        shape the graphics that we see in our screens, and keep communication systems working so we can talk with our loved ones. These algebraic structures are sort of the hidden math behind the technology that we use everyday, making our life easier and comfortable.
+        These realizations make me want to learn more and deeper about these algebraic structures and actually want to try making something with these structures.`,
+        thoughts_img: "../media/thinking.png",
+        thoughts_heading: "What I thought of the topic.",
+        thoughts: `I think the topic is very helpful, especially in the field of technology where it has a lot of applications. At first, the topic is very confusing to learn, these algebraic structures have a lot of terms, rules, and properties that have to be memorized
+        and familiarized. But once I undestood it, I began to see the different patterns and applications it had in our world. It mainly enhanced my abstract thinking and problem-solving as it is a topic containing a lot of structures. Overall, this topic made me realize
+        the secret behind some of our technology today, and I believe that this is an essential lesson for everyone to learn.`
     },
     discrete_probability: {
         title: "Discrete Probability",

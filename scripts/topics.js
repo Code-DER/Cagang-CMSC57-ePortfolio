@@ -11,63 +11,63 @@ const topics = {
         learnings_heading: "What did I learn about Counting?",
         learnings: `In this lesson, there are different concepts I learned about counting:
         <br><br>
-        First, is the product rule wherein a procedure can be broken down into 2 tasks. If there is a number of ways to the 1st task and for each of these ways in doing the first task, there is a number
+        &emsp; First, is the <b>product rule</b> wherein a procedure can be broken down into 2 tasks. If there is a number of ways to do the 1st task and for each of these ways, there is a number
         of ways to do the second task, then the number of ways to do the procedure is to multiply both number of ways each task is done. In set theoretic form, it is denoted through |A x B| = |A| x |B|.
         <br><br>
-        Second is the sum rule, if a task can be done either in one of n<sub>1</sub> ways or in one of n<sub>2</sub> ways, then there are n<sub>1</sub> + n<sub>2</sub> ways
+        &emsp; Second, we have the <b>sum rule</b>, if a task can be done either in one of n<sub>1</sub> ways or in one of n<sub>2</sub> ways, then there's n<sub>1</sub> + n<sub>2</sub> ways
         to do the task. In set theoretic form, it is denoted through the formula |A U B|= |A| + |B|.
         <br><br>
-        Third, is we have the subtraction rule, also known as the principle of inclusion-exclusion. This rule states that if a task can be done in one of n<sub>1</sub> of ways or in one of n<sub>2</sub> of ways, 
+        &emsp; Third, is we have the <b>subtraction rule</b>, also known as the principle of inclusion-exclusion. This rule states that if a task can be done in one of n<sub>1</sub> of ways or in one of n<sub>2</sub> of ways, 
         then the total of ways to do the task is n<sub>1</sub> + n<sub>2</sub> minus the number of ways to do the task that are common to the two different ways. In set theoretic form, it is denoted through the 
         formula of |A U B|= |A| + |B| - |A ∩ B|.
         <br><br>
-        There is also the tree diagram which allows us to enumerate possible choices. Once the tree is drawn, the results is the number of valid leaves.
-        <br><br>
+        &emsp; There is also the <b>tree diagram</b> which allows us to enumerate possible choices. Once the tree is drawn, the results is the number of valid leaves.
+        <br>
         <img src='../media/counting/treediagram.png' class='img-inside-info'>
-        <br><br>
-        Fourth, we have the pigeonhole principle which states that if 10 pigeons fly into 9 pigeonholes to roost, then at least one of the 9 pigeonholes must have at least two
+        <br>
+        &emsp; Fourth, we have the <b>pigeonhole principle</b> which states that if 10 pigeons fly into 9 pigeonholes to roost, then at least one of the 9 pigeonholes must have at least two
         pigeons in it.
-        <br><br>
+        <br>
         <img src='../media/counting/pigeonhole.png' class='img-inside-info'>
-        <br><br>
-        Next, we have the permutations and combinations. A permutation, denoted by P(n,r) or <sub>n</sub>P<sub>r</sub>, is an ordered arrangement of distincit elements of some set. While an r-combination, denoted
+        <br>
+        &emsp; Next, we have the permutations and combinations. A <b>permutation</b>, denoted by P(n,r) or <sub>n</sub>P<sub>r</sub>, is an ordered arrangement of distincit elements of some set. While an <b>r-combination</b>, denoted
         by C(n,r) or <sub>n</sub>C<sub>r</sub>, of elements of a set is an unordered selection of r elements from the set.
         <br><br>
-        Sometimes, elements may be used repeatedly. That is why there are permutations and combinations with repetition. Counting permutations when repetition is allowed can be done with the product rule, the number of
+        &emsp; Sometimes, elements may be used repeatedly. That is why there are <b>permutations and combinations with repetition</b>. Counting permutations when repetition is allowed can be done with the product rule, the number of
         r-permutations of a set of n objects with repetition is n<sup>r</sup>. Then there is the combinations with repetition, where there are C(n + r - 1, r) = C(n + r - 1, n - 1) r-combinations from a
         set with n elements when repetition of elements is allowed.
-        <br><br>
+        <br>
         <img src='../media/counting/permucombiformula.png' class='img-inside-info'>
-        <br><br>
-        Lastly, I also learned about generating permutations and combinations because they are not just counted, they are also generated. Generating permutations is creating all possible ordered arrangements of a set
-        of items in lexicographic (alphabetical or numerical) order. And generating combinations means creating all possible groups of items, where order doesn't matter, and listing them also in lexicographic order.`,
+        <br>
+        &emsp; Lastly, I also learned about <b>generating permutations and combinations</b> because they are not just counted, they are also generated. Generating permutations is creating all possible ordered arrangements of a set
+        of items in <b>lexicographic</b> (alphabetical or numerical) order. And generating combinations means creating all possible groups of items, where order doesn't matter, and listing them also in lexicographic order.`,
         analysis_img: "../media/counting/outfitchoose.png",
         analysis_heading: "Analysis of Counting",
-        analysis: `When learning this topic, there are a lot of concepts that come up, with different scenarios having different solutions. Come to think of it, what does this topic have to do with anything? 
+        analysis: `&emsp; When learning this topic, there are a lot of concepts that come up, with different scenarios having different solutions. Come to think of it, what does this topic have to do with anything? 
         Then I realized, that we actually use it almost everyday. These counting problems actually occur to us when we're choosing what to wear, what to eat, when arranging, when grouping, and many more. We can solve
         these types of problems with the help of the concepts like the sum rule, product rule, permutations, and combinations.`,
         applications_img: "../media/counting/chairs.png",
         applications_heading: "When we encounter these in real-life, how does it happen?",
         applications: `Based from the analysis, we know that we encounter counting problems in our daily lives. But what exactly?
         <br><br>
-        We mostly encounter these counting problems when choosing what to wear. For example, we want to choose a shirt to wear, and we have options of orange shirts with 3 types and pink shirts with 5 types, with those choices
+        &emsp; We mostly encounter these counting problems when choosing what to wear. For example, we want to choose a shirt to wear, and we have options of orange shirts with 3 types and pink shirts with 5 types, with those choices
         we can use the sum rule, then are given 3 + 5 = 8 total choices to choose from those shirts. Another one is choosing a full outfit, for example is we have 3 shirts and 4 pants to choose from, using the product rule, we
         have 3 x 4 = 12 total outfit combinations we can make with those shirts and pants.
         <br><br>
-        One example where we can see the Pigeonhole principle is the socks we have in a drawer. I have 4 different types of socks in my drawer, and when I pick up 5 from it, I am guaranteed to have at least one matching pair of
+        &emsp; One example where we can see the Pigeonhole principle is the socks we have in a drawer. I have 4 different types of socks in my drawer, and when I pick up 5 from it, I am guaranteed to have at least one matching pair of
         of socks.
         <br><br>
-        One example of permutations is seating arrangements. In school, me, Krystel, Michael, and Joseph are seated in a row. Since there are 4 of use, there is 4! = 24 ways or permutations to arrange us in sitting in a row. For
+        &emsp; One example of permutations is seating arrangements. In school, me, Krystel, Michael, and Joseph are seated in a row. Since there are 4 of use, there is 4! = 24 ways or permutations to arrange us in sitting in a row. For
         combinations on the other hand, we can think of it when choosing 2 flavors for a cone out 5 in ice cream flavors. Using the concept of combinations, there are C(5, 2) = 10 combinations of ice cream flavors we can have.`,
         reflection_img: "../media/counting/permutations-and-combinations-.png",
         reflection_heading: "My Reflection",
-        reflection: `I didn't even realize that I encounter these counting problems everyday. Mainly during the night when I am choosing what outfit to wear for the next day, or during lunch time in the canteen when choosing 
-        what food I will eat with the different choices I have. I usually struggle because it take me a long time to choose, and at first I thought because I am just mainly picky and struggle with my preferences, but now I
+        reflection: `&emsp; I didn't even realize that I encounter these counting problems everyday. Mainly during the night when I am choosing what outfit to wear for the next day, or during lunch time in the canteen when choosing 
+        what food I will eat with the different choices I have. I usually struggle because it take me a long time to choose, and at first I thought because I'm picky and struggle with my preferences, but now I
         realized that it is also because of these counting problems. I have so many clothes that there are a lot of permutations and combinations I am given with, whether I just pick random combinations or I want to wear a specific
-        type of pants and just choose randmoly from my shirts. This is the same with my food, I mainly eat fried porkchop during lunch but I struggle with what I want to pair it with, whether its pancit canton, egg, bihon, and many more.`,
+        type of pants and just choose randomly from my shirts. This is the same with my food, I mainly eat fried porkchop during lunch but I struggle with what I want to pair it with, whether its pancit canton, egg, bihon, and many more.`,
         thoughts_img: "../media/thinking.png",
         thoughts_heading: "What do I think?",
-        thoughts: `I think that this lesson was very hard at first. I understood the concepts at first but applying it with the different formulas with the different problems we were given was difficult. Sometimes I would struggle
+        thoughts: `&emsp; I think that this lesson was very hard at first. I understood the concepts at first but applying it with the different formulas and the different problems we were given was difficult. Sometimes I would struggle
         to choose whether a problem talks about permutations or combinations, or uses the sum or product rules. But now that I've kind of grasped the concept, I think I can differentiate which ones are which. And with my reflection and
         realization, it gave me an idea that this lesson has a lot of applications in real life, and this makes me wonder what other counting problems I encounter everyday that I have not even realized are counting problems yet.`
     },
@@ -76,38 +76,38 @@ const topics = {
         description: `Algebraic Structures in mathematics is a set with one or more operations defined on it. These operations on these structures must follow or adhere to specific rules.`,
         learnings_img: "../media/algebraic_structures/binaryoperation.png",
         learnings_heading: "What are Algebraic Structures?",
-        learnings: `An algebraic structure is a set equipped with one or more operations defined on it which follows specific rules. Algebraic structures are mathematical systems where we can perform operations like addition and multiplication,
+        learnings: `&emsp; An <b>algebraic structure</b> is a set equipped with one or more operations defined on it which follows specific rules. Algebraic structures are mathematical systems where we can perform operations like addition and multiplication,
         and their properties can all be studied.
         <br><br>
-        Each structure includes a set of elements. These elements can range up to numbers, matrices, functions, or letters.
+        &emsp; Each structure includes a <b>set of elements</b>. These elements can range up to numbers, matrices, functions, or letters.
         <br><br>
-        An algebraic structure also must have binary operations defined on it. These binary operations can be addition (+), subtraction (-), multiplication (-), or division (/).
+        &emsp; An algebraic structure also must have binary operations defined on it. These <b>binary operations</b> can be addition (+), subtraction (-), multiplication (-), or division (/).
         <br><br>
-        The algebraic structures' operations defined on it must also follow specific 'Axioms' or properties. These properties can be associative, identity, commutative, inverse, or distributive.`,
+        &emsp; The algebraic structures' operations defined on it must also follow specific 'Axioms' or <b>properties</b>. These properties can be associative, identity, commutative, inverse, or distributive.`,
         analysis_img: "../media/algebraic_structures/square.png",
         analysis_heading: "What can we do with it?",
-        analysis: `With this lesson, we learned a lot about what algebraic structures are. What can we do with it? Algebraic structures allow us to organize mathematical systems based on specific rules. Using algebraic structures, we can simplify
+        analysis: `&emsp; With this lesson, we learned a lot about what algebraic structures are. What can we do with it? Algebraic structures allow us to organize mathematical systems based on specific rules. Using algebraic structures, we can simplify
         complex problems. We can predict behavior of systems and even create models of symmetry and structure. Basically, algebraic structures are sort of systems or a language that describes many different and unique
         concepts in math and computer science.`,
         applications_img: "../media/algebraic_structures/cryptography.webp",
         applications_heading: "Where can these be applied to?",
-        applications: `Based from the analysis, algebraic structures have a lot of applications in real-life.
+        applications: `Based from the analysis and the lessons I learned, algebraic structures have a lot of applications in real-life.
         <br><br>
-        Algebraic structures can be applied in cryptography. These are utilized in the design and analysis of cryptographic algorithms, encryption, digital signatures, and cryptographic protocols. This ensures secure online banking, messaging, and
+        &emsp; Algebraic structures can be applied in cryptography. These are utilized in the design and analysis of cryptographic algorithms, encryption, digital signatures, and cryptographic protocols. This ensures secure online banking, messaging, and
         digital identities.
         <br><br>
-        These can also be applied in the Coding Theory. These are used to build error-detecting and correcting codes to encode and decode data, ensuring reliable transmission and error detection.
+        &emsp; These can also be applied in the Coding Theory. These are used to build error-detecting and correcting codes to encode and decode data, ensuring reliable transmission and error detection.
         <br><br>
-        Another application of algebraic structures is on computer graphics. Algebraic structures such as group-like structures are used for 3D rotations and transformations. These types of algebraic structures help animate, rotate, and scale objects
+        &emsp; Another application of algebraic structures is on computer graphics. Algebraic structures such as group-like structures are used for 3D rotations and transformations. These types of algebraic structures help animate, rotate, and scale objects
         in games, simulations, and animations.`,
         reflection_img: "../media/algebraic_structures/rotation.png",
         reflection_heading: "What then?",
-        reflection: `Through the concepts of algebraic structures and its applications, I realized that algebraic structures aren't just abstract, they are one of the solutions to solving real-world problems. I didn't really realize how big of an impact
+        reflection: `&emsp; Through the concepts of algebraic structures and its applications, I realized that algebraic structures aren't just abstract, they are one of the solutions to solving real-world problems. I didn't really realize how big of an impact
         these structures have on technology. I haven't really had that much interactions or head-on encounter with algebraic structures, but I sure will explore more about it especially that it has a lot of applications in computer science.`,
         thoughts_img: "../media/thinking.png",
         thoughts_heading: "What I think?",
-        thoughts: `I thought that this lesson was very confusing at first. I didn't understand what algebraic structure actually are when we first tackled this lesson. But now that I've learned it, I came to realize that it actually has a lot of applications
-        that help solve real-life problems. I still think that this lesson is difficult but once fun to learn. The next topic about specific algebraic structures, namely the groups, rings, and fields, expands more about the ideas and how to analyze, solve,
+        thoughts: `&emsp; I thought that this lesson was very confusing at first. I didn't understand what algebraic structures actually are when we first tackled this lesson. But now that I've learned it, I came to realize that it actually has a lot of applications
+        that help solve real-life problems. I still think that this lesson is difficult but fun to learn. The next topic about specific algebraic structures, namely the groups, rings, and fields, expands more about the ideas and how to analyze, solve,
         and study the behavior of these different structures.`
     },
     groups_rings_and_fields: {
@@ -116,67 +116,86 @@ const topics = {
         of these algebraic structures are the Groups, Rings, and Fields.`,
         learnings_img: "../media/groups_rings_fields/transformations.png",
         learnings_heading: "What are these Groups, Rings, and Fields?",
-        learnings: `The previous lesson talked about the concepts of algebraic structures. In this lesson, we will talk about specific algebraic structures, namely the groups, rings, and fields. Let's talk about the concepts, terms, rules, and properties I've
+        learnings: `&emsp; The previous lesson talked about the concepts of algebraic structures. In this lesson, we will talk about specific algebraic structures, namely the <b>groups</b>, <b>rings</b>, and <b>fields</b>. Let's talk about the concepts, terms, rules, and properties I've
         learned in this topic.
         <br><br>
-        A 'Group' is a non-empty set of elements together with an operation that combines any two elements to form a third element while satisfying conditions.
-        <li>Closure: For any two elements a and b in the set, the result of the operation a * b must also be in the set.</li>
-        <li>Associativity: The operation must be associative, meaning  (a * b) * c = a * (b * c) for all elements a, b, and c in the set.</li>
-        <li>Identity Element: In the set, there must be an element e that such for every element a in the set, a * e = e * a = a. This means that e is the identity element of the set.</li>
-        <li>Inverse Element: For every element a in the set, there exists an element b in G such that a * b = b * a = e, where e is the identity element. The element b is called the inverse of a.</li>
-        <li>Additional property: If the operation in the set is commutative, where a * b = b * a for all elements a and b in the set, then the group is called an abelian group.</li>
-        <br><br>
-        A 'Ring' (R, +, ⋅) is a set R together with two binary operations + (addition) and ⋅ (multiplication) such that:
+        &emsp; A <b>Group</b> is a non-empty set of elements together with an operation that combines any two elements to form a third element while satisfying conditions.
+        <li><u>Closure</u>: For any two elements a and b in the set, the result of the operation a * b must also be in the set.</li>
+        <li><u>Associativity</u>: The operation must be associative, meaning  (a * b) * c = a * (b * c) for all elements a, b, and c in the set.</li>
+        <li><u>Identity Element</u>: In the set, there must be an element e that such for every element a in the set, a * e = e * a = a. This means that e is the identity element of the set.</li>
+        <li><u>Inverse Element</u>: For every element a in the set, there exists an element b in G such that a * b = b * a = e, where e is the identity element. The element b is called the inverse of a.</li>
+        <li><u>Abelian Group</u> (additional property): If the operation in the set is commutative, where a * b = b * a for all elements a and b in the set, then the group is called an abelian group.</li>
         <br>
-        Additive Group: (R, +) is an abelian group. This means that:
-        <li>Closure under addition: a + b ∈ R</li>
-        <li>Associativity of addition: (a + b) + c = a + (b + c)</li>
-        <li>Additive identity: There exists an element 0 ∈ R such that a + 0 = a</li>
-        <li>Additive inverse: For every a ∈ R, there exists -a ∈ R such that a + (-a) = 0</li>
-        <li>Commutativity of addition: a + b = b + a</li>
-        Multiplication: The multiplication operation (⋅) satisfies:
-        <li>Closure: For all a, b ∈ R, a ⋅ b ∈ R</li>
-        <li>Associativity: (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c) for all a, b, c ∈ R</li>
-        Distributive Property: Multiplication distributes over addition:
-        <li>a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c)</li>
-        <br><br>
-        A 'Field' (F, +, ⋅) is a set F together with two binary operations + (addition) and ⋅ (multiplication) such that:
+        &emsp; A <b>Ring</b> (R, +, ⋅) is a set R together with two binary operations + (addition) and ⋅ (multiplication) such that:
         <br>
-        Additive Group: (F, +) forms an abelian group under addition. This means:
-        <li>Closure under addition: a + b ∈ R</li>
-        <li>Associativity of addition: (a + b) + c = a + (b + c)</li>
-        <li>Additive identity: There exists an element 0 ∈ F such that a + 0 = a</li>
-        <li>Additive inverse: For every a ∈ F, there exists -a ∈ F such that a + (-a) = 0</li>
-        <li>Commutativity of addition: a + b = b + a</li>
-        Multiplication Forms an Abelian Group: Set F forms an abelian group under multiplication:
-        <li>Closure under multiplication: a ⋅ b ∈ F</li>
-        <li>Associativity of multiplication: (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c)</li>
-        <li>Multiplicative identity: There exists and element 1 ∈ F, distinct from 0, such that a ⋅ 1 = a</li>
-        <li>Multiplicative inverse: For every a ∈ F, there exists a<sup>-1</sup> ∈ F such that a ⋅ a<sup>-1</sup> = 1</li>
-        <li>Commutativity of multiplication: a ⋅ b = b ⋅ a</li>
-        Distributive Property: Multiplication distributes over addition:
-        <li>a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c)</li>
-        <br><br>
-        I've also learned about transformations of groups through geometry. An example of one kind of transformation is rotation, which can be done clockwise or counter-clockwise. The rotation of a geometrical shape depends on the operation and shape. Another
+        <ul>
+            <li><i>Additive Group</i>: (R, +) is an abelian group. This means that:</li>
+                <ul>
+                    <li><u>Closure under addition</u>: a + b ∈ R</li>
+                    <li><u>Associativity of addition</u>: (a + b) + c = a + (b + c)</li>
+                    <li><u>Additive identity</u>: There exists an element 0 ∈ R such that a + 0 = a</li>
+                    <li><u>Additive inverse</u>: For every a ∈ R, there exists -a ∈ R such that a + (-a) = 0</li>
+                    <li><u>Commutativity of addition</u>: a + b = b + a</li>
+                </ul>
+            </li>
+            <li><i>Multiplication</i>: The multiplication operation (⋅) satisfies:</li>
+                <ul>
+                    <li><u>Closure</u>: For all a, b ∈ R, a ⋅ b ∈ R</li>
+                    <li><u>Associativity</u>: (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c) for all a, b, c ∈ R</li>
+                </ul>
+            </li>
+            <li><i>Distributive Property</i>: Multiplication distributes over addition:</li>
+                    <ul>
+                        <li>a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c)</li>
+                    </ul>
+            </li>
+        </ul>
+        <br>
+        &emsp; A <b>Field</b> (F, +, ⋅) is a set F together with two binary operations + (addition) and ⋅ (multiplication) such that:
+        <br>
+        <ul>
+            <li><i>Additive Group</i>: (F, +) forms an abelian group under addition. This means:</li>
+                <ul>
+                    <li><u>Closure under addition</u>: a + b ∈ R</li>
+                    <li><u>Associativity of addition</u>: (a + b) + c = a + (b + c)</li>
+                    <li><u>Additive identity</u>: There exists an element 0 ∈ F such that a + 0 = a</li>
+                    <li><u>Additive inverse</u>: For every a ∈ F, there exists -a ∈ F such that a + (-a) = 0</li>
+                    <li><u>Commutativity of addition</u>: a + b = b + a</li>
+                </ul>
+            <li><i>Multiplication Forms an Abelian Group</i>: Set F forms an abelian group under multiplication:</li>
+            <ul>
+                <li><u>Closure under multiplication</u>: a ⋅ b ∈ F</li>
+                <li><u>Associativity of multiplication</u>: (a ⋅ b) ⋅ c = a ⋅ (b ⋅ c)</li>
+                <li><u>Multiplicative identity</u>: There exists and element 1 ∈ F, distinct from 0, such that a ⋅ 1 = a</li>
+                <li><u>Multiplicative inverse</u>: For every a ∈ F, there exists a<sup>-1</sup> ∈ F such that a ⋅ a<sup>-1</sup> = 1</li>
+                <li><u>Commutativity of multiplication</u>: a ⋅ b = b ⋅ a</li>
+            </ul>
+            <li><i>Distributive Property</i>: Multiplication distributes over addition:</li>
+            <ul>
+                <li>a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c)</li>
+            </ul>
+        </ul>
+        <br>
+        &emsp; I've also learned about <b>transformations</b> of groups through geometry. An example of one kind of transformation is rotation, which can be done clockwise or counter-clockwise. The rotation of a geometrical shape depends on the operation and shape. Another
         kind of transformation is a flip, which is done around an axis through a vertex perpendicular to the opposite side.`,
         analysis_img: "../media/groups_rings_fields/cryptography.png",
         analysis_heading: "What can we get from this?",
-        analysis: `These groups, rings, and fields are important topics or concepts that help us understand how different mathematical operations work together in structured ways. These algebraic structures provide a framework for us to understand how certain
+        analysis: `&emsp; These groups, rings, and fields are important topics or concepts that help us understand how different mathematical operations work together in structured ways. These algebraic structures provide a template for us to understand how certain
         elements interact under different operations. They allow us to solve real-life problems across different fields.`,
         applications_img: "../media/groups_rings_fields/rubikscube.png",
         applications_heading: "What are its applications?",
-        applications: `As previosly stated in the last topic, these algebraic structures have a lot of applications which mainly are solutions to real-world problems. Groups can be applied in Cryptography like modular arithmetic and elliptic curve cryptography. It
+        applications: `&emsp; As previosly stated in the last topic, these algebraic structures have a lot of applications which mainly are solutions to real-world problems. Groups can be applied in Cryptography like modular arithmetic and elliptic curve cryptography. It
         is even used in Rubik's Cube as the moves follow group operations. There is also 3D graphics which can be done through group rotations and flips, and even in Molecular Geometry through the symmetry groups of molecules. Rings can be used in Coding Theory
         by detecting and correcting error in messages, and in Modular arithmetic as key in cryptographic systems. Fields can also be used in mathematical modeling which uses rational and real numbers to solve equations, error correction, and with Finite Fields, which
         are used in encryptions, QR codes, and digital communication.`,
         reflection_img: "../media/groups_rings_fields/shapes.png",
         reflection_heading: "What did I reflect?",
-        reflection: `From the learnings and and analysis I had, the algebraic structures groups, rings, and fields showed me that they aren't just for academics, but they solve our real-world problems. These algebraic structures are the key components protect our data,
+        reflection: `&emsp; From the learnings and and analysis I had, the algebraic structures groups, rings, and fields showed me that they solve our real-world problems. These algebraic structures are the key components protect our data,
         shape the graphics that we see in our screens, and keep communication systems working so we can talk with our loved ones. These algebraic structures are sort of the hidden math behind the technology that we use everyday, making our life easier and comfortable.
         These realizations make me want to learn more and deeper about these algebraic structures and actually want to try making something with these structures.`,
         thoughts_img: "../media/thinking.png",
         thoughts_heading: "What I thought of the topic.",
-        thoughts: `I think the topic is very helpful, especially in the field of technology where it has a lot of applications. At first, the topic is very confusing to learn, these algebraic structures have a lot of terms, rules, and properties that have to be memorized
+        thoughts: `&emsp; I think the topic is very helpful, especially in the field of technology where it has a lot of applications. At first, the topic is very confusing to learn, these algebraic structures have a lot of terms, rules, and properties that have to be memorized
         and familiarized. But once I undestood it, I began to see the different patterns and applications it had in our world. It mainly enhanced my abstract thinking and problem-solving as it is a topic containing a lot of structures. Overall, this topic made me realize
         the secret behind some of our technology today, and I believe that this is an essential lesson for everyone to learn.`
     },
@@ -186,7 +205,7 @@ const topics = {
         Discrete probability is used to analyze data and values that are distinct and can be counted.`,
         learnings_img: "../media/discrete_probability/dice.jpg",
         learnings_heading: "What did I learn?",
-        learnings: `&emsp; This lesson talked about probabilities, which in general, is the likeliness of an event happening based on the situations.
+        learnings: `&emsp; This lesson talked about probabilities, which in general, is the likeliness of an event happening based on different situations.
         <br><br>
         &emsp; First is <b>assigning probabilities</b>, where the probability of an event is equal to the number of outcomes E divided by the total number of outcomes S. This formula shows the general idea of a probability event wherein the likeliness of an event
         to happen should be between 0 to 1, and that the sum of probabilities of all possible outcomes should be 1.
@@ -239,7 +258,9 @@ const topics = {
         But there is also a <b>directed multigraph</b>, which allows for loops and multiple edges connecting the same pair of vertices.
         <br><br>
         &emsp; In addition, there are ways to navigate through these graphs. First is through <b>Euler's Path or Cycle</b>, which states that each <u>edge</u> of a graph is traversed precisely once. Another one is the <b>Hamiltonian Path or Cycle</b>,
-        which states each <u>vertex</u> is visited only once. Lastly is <b>Dijkstra's algorithm</b>, which solves the shortest path problem from one point to another in a graph.`,
+        which states each <u>vertex</u> is visited only once. Lastly is <b>Dijkstra's algorithm</b>, which solves the shortest path problem from one point to another in a graph.
+        <br><br>
+        &ensp; Lastly, we also learned about <b>graph coloring</b>. In graph coloring, it is the assignment of colors to the vertices, so that no two adjacent vertices share the same color.`,
         analysis_img: "../media/graphs/shortest_path.png",
         analysis_heading: "Let's analyze!",
         analysis: `&emsp; Now with these ideas, what am I supposed to do with it? I quickly compared it with something familiar, and then I realized, these types of graphs are just similar to the roads and
@@ -253,7 +274,7 @@ const topics = {
         <br><br>
         &emsp; An example of an Euler's Path is a police officer who patrols the streets. In our barangay, Catalunan Grande, our barangay officers patrol each street once every night to ensure nobody is out and about late in the evening.
         <br><br>
-        &emsp; We have tried to travel at least once in our life, and when traveling, there are destinations we want to visit. These destinations, or let's say tourist spot of some city, are the vertices in a graph, and we want to visit them exactly once
+        &emsp; We have tried to travel at least once in our life, and when traveling, there are destinations we want to visit. These destinations, or let's say tourist spots of some city, are the vertices in a graph, and we want to visit them exactly once
         during that travel. This is a real-life application of Hamiltonian path, wherein we want to visit exactly each vertex in the graph exactly once, or in this case, visit the tourist spot exactly once in our travel.
         <br><br>
         &emsp; Another one we can use in real life is Dijkstra's algorithm to find the shortest path from one point to another. I have actually tried this one very recently, as I am living in Catalunan Grande, I want to know the shortest path from our home

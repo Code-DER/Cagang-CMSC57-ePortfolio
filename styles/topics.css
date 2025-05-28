@@ -24,8 +24,8 @@ main {
     grid-area: topic-img;
     height: auto;
     width: 80%;
-    padding-bottom: 30px;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 .topic-section > .topic-section-heading {
     grid-area: topic-heading;
@@ -36,18 +36,27 @@ main {
     grid-area: topic-info;
     padding-bottom: 30px;
 }
-
+b, strong {
+    color: #FFF150;
+    
+}
 #topic-title {
     font-size: xx-large;
     font-weight: bolder;
     color: #FF8014;
 }
 .img-inside-info {
-    max-width: 50%;
+    max-width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 3px;
+}
+ul {
+    margin-left: 1em;
+}
+ul ul, ol ol {
+    margin-left: 2em; /* Increase for more indentation */
 }
 
 /* For tablets */

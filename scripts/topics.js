@@ -7,7 +7,7 @@ const topics = {
     counting: {
         title: "Counting",
         description: "Counting tackles combinatorics which is the study of arrangements of objects, and enumeration which is the counting of objects with certain properties.",
-        learnings_img: "../media/counting/balls.png",
+        learnings_img: "../media/counting/permutations.webp",
         learnings_heading: "What did I learn about Counting?",
         learnings: `In this lesson, there are different concepts I learned about counting:
         <br><br>

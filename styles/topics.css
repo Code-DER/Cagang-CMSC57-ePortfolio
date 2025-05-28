@@ -1,9 +1,11 @@
 body {
     background-color: #282F37;
 }
+main {
+    line-height: 2;
+}
 .topic-section {
     width: 90%;
-    /* max-width: 700px; */
     margin: 2rem auto;
     text-align: justify;
     border-bottom: 2px solid green;   
@@ -46,4 +48,67 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 3px;
+}
+
+/* For tablets */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .topic-section {
+        grid-template-areas: 
+            "topic-img topic-heading"
+            "topic-info topic-info";
+        grid-template-columns: 1fr 2fr;
+        width: 90%;
+        padding: 0 2vw;
+    }
+    .topic-section > .topic-section-img {
+        width: 90%;
+    }
+    .topic-section > .topic-section-heading {
+        font-size: 1.5rem;
+        padding-left: 10px;
+        align-self: center;
+    }
+    .topic-section > .topic-section-info {
+        font-size: 1rem;
+        padding-bottom: 15px;
+        grid-column: 1 / span 2;
+    }
+    #topic-title {
+        font-size: 2rem;
+    }
+    .img-inside-info {
+        max-width: 60%;
+    }
+}
+
+
+/* For Phones */
+@media screen and (max-width: 425px) {
+    .topic-section {
+        grid-template-areas: 
+            "topic-img topic-heading"
+            "topic-info topic-info";
+        grid-template-columns: 1fr 2fr;
+        width: 85%;
+        padding: 0 2vw;
+    }
+    .topic-section > .topic-section-img {
+        width: 90%;
+    }
+    .topic-section > .topic-section-heading {
+        font-size: 1.4rem;
+        padding-left: 8px;
+        align-self: center;
+    }
+    .topic-section > .topic-section-info {
+        font-size: 0.9rem;
+        padding-bottom: 15px;
+        grid-column: 1 / span 2;
+    }
+    #topic-title {
+        font-size: 1.9rem;
+    }
+    .img-inside-info {
+        max-width: 60%;
+    }
 }

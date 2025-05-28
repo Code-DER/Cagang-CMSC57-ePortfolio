@@ -260,7 +260,7 @@ const topics = {
         &emsp; In addition, there are ways to navigate through these graphs. First is through <b>Euler's Path or Cycle</b>, which states that each <u>edge</u> of a graph is traversed precisely once. Another one is the <b>Hamiltonian Path or Cycle</b>,
         which states each <u>vertex</u> is visited only once. Lastly is <b>Dijkstra's algorithm</b>, which solves the shortest path problem from one point to another in a graph.
         <br><br>
-        &ensp; Lastly, we also learned about <b>graph coloring</b>. In graph coloring, it is the assignment of colors to the vertices, so that no two adjacent vertices share the same color.`,
+        &ensp; Lastly, I also learned about <b>graph coloring</b>. Graph coloring is the assignment of colors to the vertices of a graph such that no two adjacent vertices share the same color.`,
         analysis_img: "../media/graphs/shortest_path.png",
         analysis_heading: "Let's analyze!",
         analysis: `&emsp; Now with these ideas, what am I supposed to do with it? I quickly compared it with something familiar, and then I realized, these types of graphs are just similar to the roads and
